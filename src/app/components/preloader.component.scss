@@ -1,0 +1,8 @@
+.preloader-fill {
+  clip-path: inset(100% 0 0 0);
+  animation: fillUp 1.6s ease-in-out 0.2s forwards;
+}
+
+@keyframes fillUp {
+  to { clip-path: inset(0% 0 0 0); }
+}

@@ -1,0 +1,53 @@
+<footer class="bg-[#111111] text-[#d4d4d4] py-16 px-6 md:px-12 w-full font-mono text-[10px] md:text-xs tracking-widest flex flex-col justify-between min-h-[50vh]">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full font-medium">
+    <div class="flex flex-col gap-1">
+      <p *ngFor="let line of footer.taglines">{{ line }}</p>
+    </div>
+
+    <div class="flex flex-col gap-1 md:items-center">
+      <p>{{ footer.credential }}</p>
+      <a href="#projects" class="underline hover:text-white transition-colors mt-1 underline-offset-4 decoration-1">View Work</a>
+    </div>
+
+    <div class="flex flex-col gap-1 md:items-end">
+      <p>Available for opportunities</p>
+      <p>{{ year }}</p>
+    </div>
+  </div>
+
+  <div class="w-full flex justify-center items-center py-20 md:py-24 overflow-hidden">
+    <h2 class="text-[18vw] md:text-[16vw] leading-none font-sans font-bold tracking-tighter lowercase select-none text-[#f4f4f4] w-full text-center">
+      {{ personalInfo.brandName.toLowerCase() }}
+    </h2>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 w-full items-end font-medium">
+    <div class="flex flex-col gap-6">
+      <a href="#contact" class="underline hover:text-white transition-colors underline-offset-4 decoration-1 font-bold">Contact</a>
+      <p class="text-white/60 font-mono text-[9px] md:text-[10px]">{{ footer.copyright }}</p>
+    </div>
+
+    <div class="flex flex-col gap-3 md:items-center">
+      <a [href]="'mailto:' + personalInfo.emails.primary" class="underline hover:text-white transition-colors underline-offset-4 decoration-1 lowercase">
+        {{ personalInfo.emails.primary }}
+      </a>
+      <div class="flex items-center gap-4 mt-2">
+        <a [href]="social.github" target="_blank" rel="noopener noreferrer" class="text-[#d4d4d4] hover:text-white transition-colors duration-300" aria-label="GitHub">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" [attr.d]="icons.github" clip-rule="evenodd" /></svg>
+        </a>
+        <a [href]="social.linkedin" target="_blank" rel="noopener noreferrer" class="text-[#d4d4d4] hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path [attr.d]="icons.linkedin" /></svg>
+        </a>
+        <a [href]="social.instagram" target="_blank" rel="noopener noreferrer" class="text-[#d4d4d4] hover:text-white transition-colors duration-300" aria-label="Instagram">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path [attr.d]="icons.instagram" /></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-1 md:items-end">
+      <a [href]="social.github" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition-colors underline-offset-4 decoration-1">
+        Explore My GitHub
+      </a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,12 @@
+<div
+  *ngIf="isLoading"
+  class="fixed inset-0 w-full h-screen bg-[#ff2a2a] z-[100000] flex items-center justify-center transition-transform duration-[1200ms] ease-[cubic-bezier(0.76,0,0.24,1)]"
+  [class.-translate-y-full]="isExiting"
+>
+  <div class="relative text-5xl md:text-7xl font-black tracking-tighter" [class.opacity-0]="isExiting">
+    <div class="text-red-900/30">{{ brandName }}<span class="text-red-900/30">.</span></div>
+    <div class="absolute top-0 left-0 text-white overflow-hidden whitespace-nowrap preloader-fill">
+      {{ brandName }}<span class="text-black">.</span>
+    </div>
+  </div>
+</div>
