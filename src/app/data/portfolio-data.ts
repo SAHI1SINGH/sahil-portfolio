@@ -10,7 +10,7 @@ export const personalInfo = {
   },
   summary:
     'Java Full Stack Developer building scalable full-stack applications with Java, Spring Boot, Flutter, and MongoDB — currently working as a Technical Assistant at Tadoba Solutions Pvt. Ltd.',
-  resumeUrl: '/resume.pdf', // [PLACEHOLDER] add your resume PDF to public/ and update this path
+  resumeUrl: 'sahil_resume.pdf', 
 };
 
 export const socialLinks = {
