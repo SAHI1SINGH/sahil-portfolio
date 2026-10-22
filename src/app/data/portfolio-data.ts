@@ -10,7 +10,7 @@ export const personalInfo = {
   },
   summary:
     'Java Full Stack Developer building scalable full-stack applications with Java, Spring Boot, Flutter, and MongoDB — currently working as a Technical Assistant at Tadoba Solutions Pvt. Ltd.',
-  resumeUrl: '/resume.pdf', // [PLACEHOLDER] add your resume PDF to public/ and update this path
+  resumeUrl: '/sahil-portfolio/sahil_resume.pdf', 
 };
 
 export const socialLinks = {
@@ -92,7 +92,6 @@ export const technicalSkills = {
       skills: [
         { name: 'Spring Boot', level: 88 },
         { name: 'REST APIs', level: 90 },
-        { name: 'Node.js', level: 65 },
       ],
     },
     {
@@ -198,7 +197,6 @@ export const internshipsList = [
   },
 ];
 
-// [PLACEHOLDER SECTION] — soft skills: generic starting set, edit freely
 export const softSkillsList = [
   { name: 'Problem Solving', icon: '🧩', desc: 'Breaking down complex engineering tasks into clean, logical, and modular pieces.' },
   { name: 'Communication', icon: '💬', desc: 'Clear, concise, and structured interactions in both technical and business contexts.' },
@@ -232,7 +230,7 @@ export const projects = [
       'An employee management information system with Admin, Sub-Admin, and Employee roles — covering leave workflows, attendance, and internal operations.',
     techTags: ['Flutter', 'Spring Boot', 'MongoDB'],
     links: {
-      github: '#', // [PLACEHOLDER] add repo link
+      github: '#',
     },
     isFlagship: false,
   },
